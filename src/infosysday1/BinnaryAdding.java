@@ -1,14 +1,23 @@
-package infosys;
+package infosysday1;
 
 import java.util.Scanner;
 import java.util.*;
+
+/* 
+ * binary addition 
+ * Sample Inputs:
+ * 		a = 11, b = 1;
+ * 
+ * Sample output:
+ * 		=100
+ */
 
 public class BinnaryAdding {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// Getting input using
+		// Getting input using Scanner
 		String a = sc.next();
 		String b = sc.next();
 
@@ -39,7 +48,7 @@ public class BinnaryAdding {
 			// ex m=11,n=1
 			sum = (m % 10 + n % 10 + c) % 2;// ((11%10=1)+(1%10=1)+0)%2 = 2%2=0
 			arr.add(sum);
-			c = (m % 10 + n % 10 + c) / 2;
+			c = (m % 10 + n % 10 + c) / 2; // calculate carry
 			m = m / 10;
 			n = n / 10;
 		}

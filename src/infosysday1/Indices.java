@@ -1,4 +1,4 @@
-package infosys;
+package infosysday1;
 
 import java.util.*;
 

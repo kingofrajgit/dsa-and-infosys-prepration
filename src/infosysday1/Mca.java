@@ -1,4 +1,4 @@
-package infosys;
+package infosysday1;
 
 /*
  * 3) Get Maximum in Generated Array Leetcode Solution
