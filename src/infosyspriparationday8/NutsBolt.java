@@ -63,14 +63,14 @@ public class NutsBolt {
 		for(int i =0;i<n;i++) {
 			bolt[i]=sc.nextInt();
 		}*/
-		
+		//Map<String,String> map = new HashMap<>();
 		//static inputs 
-		char[] nuts = {'@', '#', '$', '%', '^', '&'};
-		char[] bolt = {'$', '%', '&', '^', '@', '#'};
+		String[] nuts = {"@", "#", "$", "%", "^", "&"};
+		String[] bolt = {"$", "%", "&", "^", "@", "#"};
 		for(int i =0;i<bolt.length;i++) {
 			for(int j=0;j<nuts.length;j++) {
 				if(bolt[i]==nuts[j]) {
-					char temp = nuts[i];
+					String temp = nuts[i];
 					nuts[i] = nuts[j];
 					nuts[j] = temp;
 					break;

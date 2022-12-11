@@ -25,7 +25,7 @@ public class MinimumCoins {
 		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();
 //		int[] a = { 25, 10, 5 };
-		int[] a =  {9, 6, 5, 1};
+		int[] a =  {5, 1, 9,1};
 		Arrays.sort(a);
 		int v = sc.nextInt();
 		int size = a.length;
@@ -34,7 +34,9 @@ public class MinimumCoins {
 			int c =0;
 			for (int j = i; j <= i; j++) {
 					c+=a[j];
+					System.out.print(c);
 			}
+			System.out.println();
 			fun(a,c,i+1,v);
 		}
 		System.out.println(c);
